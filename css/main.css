@@ -1,0 +1,44 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 2000px;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    background-color: rgba(100, 100, 107, 0.866);
+    height: 80px;
+
+}
+
+header img {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    position: relative;
+    top: 10px;
+    left: 100px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: x-large;
+    position: relative;
+    bottom: 35px;
+    left: 320px;
+    color: azure;
+    font-family: IndieFlower;
+}
+
+@font-face {
+    font-family: IndieFlower;
+    src: url(../Fonts/IndieFlower.ttf);
+}
+
