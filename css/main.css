@@ -8,6 +8,7 @@ html {
 
 body {
     height: 2000px;
+    width: auto;
 }
 
 header {
@@ -32,7 +33,6 @@ h1 {
     font-size: x-large;
     position: relative;
     bottom: 35px;
-    left: 320px;
     color: azure;
     font-family: IndieFlower;
 }
@@ -42,3 +42,23 @@ h1 {
     src: url(../Fonts/IndieFlower.ttf);
 }
 
+footer {
+    background-color: rgba(100, 100, 107, 0.866);
+    position: relative;
+    top: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.telefon {
+    
+}
+
+.adreça {
+    
+}
+
+#copy {
+
+}
