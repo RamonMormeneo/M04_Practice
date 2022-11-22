@@ -8,7 +8,7 @@ html {
 
 body {
     height: 2000px;
-    width: auto;
+    width: 100%;
 }
 
 header {
@@ -16,23 +16,19 @@ header {
     top: 0px;
     background-color: rgba(100, 100, 107, 0.866);
     height: 80px;
-
+    display:flex;
+    justify-content: flex-start;
 }
 
 header img {
     height: 60px;
     width: 60px;
-    border-radius: 100%;
-    position: relative;
-    top: 10px;
-    left: 100px;
+    border-radius: 100%; 
 }
 
-h1 {
+header h1 {
     font-weight: bold;
-    font-size: x-large;
-    position: relative;
-    bottom: 35px;
+    font-size: xx-large;
     color: azure;
     font-family: IndieFlower;
 }
@@ -40,6 +36,35 @@ h1 {
 @font-face {
     font-family: IndieFlower;
     src: url(../Fonts/IndieFlower.ttf);
+}
+
+nav{
+    margin-left: auto;
+    width: 600px;
+    margin-top: 30px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+li{
+    background-color: rgb(68, 63, 63);
+    width: 100px;
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    display: inline-block;
+    text-align: center;
+    font-family: IndieFlower;
+    color: azure;
+    text-decoration: none;
 }
 
 footer {
