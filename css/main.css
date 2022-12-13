@@ -9,6 +9,7 @@ html {
 body {
     height: 2000px;
     width: 100%;
+    font-family: IndieFlower;
 }
 
 header {
@@ -23,14 +24,18 @@ header {
 header img {
     height: 60px;
     width: 60px;
-    border-radius: 100%; 
+    border-radius: 100%;
+    margin-top: 10px;
+    margin-left: 50px; 
 }
 
 header h1 {
     font-weight: bold;
     font-size: xx-large;
     color: azure;
-    font-family: IndieFlower;
+    display: flex;
+    align-items: center;
+    margin-left: 220px;
 }
 
 @font-face {
@@ -39,15 +44,15 @@ header h1 {
 }
 
 nav{
-    margin-left: auto;
+    margin-left: 400px;
     width: 600px;
-    margin-top: 30px;
+    margin-top: 23px;
+    
 }
 
 ul {
     display: flex;
     justify-content: space-around;
-    
 }
 
 li{
@@ -57,12 +62,12 @@ li{
     text-align: center;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 a{
     display: inline-block;
     text-align: center;
-    font-family: IndieFlower;
     color: azure;
     text-decoration: none;
 }
@@ -72,18 +77,10 @@ footer {
     position: relative;
     top: 100%;
     display: flex;
-    justify-content: center;
-    
+    height: 100px;
+    justify-content: space-around;
+    color: white;
+    font-size: larger;
+    align-items: center;
 }
 
-.telefon {
-    
-}
-
-.adreça {
-    
-}
-
-#copy {
-
-}
