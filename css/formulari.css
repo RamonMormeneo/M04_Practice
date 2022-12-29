@@ -4,10 +4,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-image: url(../img/fons_conan.webp);
+  background-color: #dadce0;
   font-family: "lato", sans-serif;
 }
 
