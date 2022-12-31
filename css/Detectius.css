@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  height: 2000px;
+  height: auto;
   width: 100%;
   font-family: GaramondRegular;
 }
@@ -190,4 +190,8 @@ div a {
 .fila img {
   width: 100%;
   height: auto;
+}
+
+#container {
+  margin-bottom: 50px;
 }

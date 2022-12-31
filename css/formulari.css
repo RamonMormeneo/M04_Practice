@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #dadce0;
-  height: 2000px;
+  height: auto;
   width: 100%;
   font-family: GaramondRegular;
 }
@@ -79,7 +79,7 @@ a {
 footer {
   background-color: rgba(100, 100, 107, 0.866);
   position: relative;
-  top: 100%;
+  top: auto;
   display: flex;
   height: 100px;
   justify-content: space-around;
