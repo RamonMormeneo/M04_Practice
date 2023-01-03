@@ -73,28 +73,156 @@
       class="perfil"
     />
     <p class="descripcio">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eveniet
-      tempore suscipit, quos sunt voluptates. Commodi unde nesciunt doloribus
-      fugit inventore incidunt similique possimus ipsum porro placeat. Ducimus
-      non, ad omnis explicabo error veniam adipisci eius sit rem ratione culpa
-      magnam dolor nostrum, eligendi animi illo veritatis vero natus dolorem,
-      aperiam ipsam ipsum sed cumque esse. Ea hic delectus a? Similique dolorum
-      repellendus, quidem, quis aut sint qui magnam modi laborum nemo error
-      veniam debitis itaque. Veniam ad incidunt sapiente vel et odit cumque hic,
-      nulla quam minus magnam, iure saepe eveniet vero maiores facilis pariatur
-      atque accusamus debitis, animi fugiat quis nobis perspiciatis repellendus.
-      Mollitia voluptatibus, sit harum blanditiis odit saepe neque corporis
-      eaque accusantium ratione recusandae totam quos, impedit nostrum at dicta
-      consectetur voluptas voluptatem. Explicabo corporis quidem nulla nobis,
-      illo dolor consequatur iusto suscipit, porro tenetur necessitatibus
-      inventore neque doloribus magni, voluptatum reiciendis saepe voluptatem
-      ullam consequuntur earum ipsum harum? Repudiandae accusantium veniam
-      cumque quibusdam impedit eum blanditiis, corporis iusto debitis excepturi
-      doloremque quae nobis alias obcaecati earum. Nobis unde omnis esse nam
-      reprehenderit perspiciatis animi praesentium distinctio ratione neque,
-      voluptatibus hic non corrupti accusantium fugit, corporis commodi ipsam
-      maxime pariatur ducimus, iure sed dolorem iusto! Accusamus?
+      Sóc l'Inspector Gadget, un detectiu especial, una mena de policia-ciborg.
+      La meva reputacio no es bona en comparacio als meus exits en els casos ja
+      que sempre els resolc i no tinc cap cas que s'em resisteixi. S'em jutja
+      per els meus metodes pero son eficaços ja que en el meu barret i a les
+      meves mans es poden transformar en gadgets molt utils.
+      <br />
+      A continuacio tens unes imatges on es poden apreciar les meves habilitats:
     </p>
+    <div><br /><br /><br /><br /><br /></div>
+    <!-- Container for the image gallery -->
+    <div id="slider">
+      <!-- imatges en gran del slider -->
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="./img/gadget0.webp" style="width: 100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="./img/gadget1.webp" style="width: 100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="./img/gadget2.webp" style="width: 100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="./img/gadget3.webp" style="width: 100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="img/gadget4.webp" style="width: 100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="img/gadget5.webp" style="width: 100%" />
+      </div>
+
+      <!-- Botons de seguent i anterior -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- El peu del text de les imatges del slider -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- imatges que surten en petit abaix del slider -->
+      <div class="row">
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/gadget0.webp"
+            style="width: 100%"
+            onclick="currentSlide(1)"
+            alt="Inspector Gadget"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/gadget1.webp"
+            style="width: 100%"
+            onclick="currentSlide(2)"
+            alt="Inspector Gadget"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/gadget2.webp"
+            style="width: 100%"
+            onclick="currentSlide(3)"
+            alt="Inspector Gadget"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/gadget3.webp"
+            style="width: 100%"
+            onclick="currentSlide(4)"
+            alt="Inspector Gadget"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/gadget4.webp"
+            style="width: 100%"
+            onclick="currentSlide(5)"
+            alt="Inspector Gadget"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/gadget5.webp"
+            style="width: 100%"
+            onclick="currentSlide(6)"
+            alt="Inspector Gadget"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Aquest script de js serveix per controlar els botons que hi han abaix a l'esquerra del slider i aixi passi a la seguent imatge i a la anterior -->
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    </script>
+
+    <!-- Aixo es un separador per posar entre detectius -->
+    <hr color="black" size="8px" />
+
     <footer id="footer">
       <p class="adreça">Adreça: C/ del Pont, 45</p>
       <p id="copy">Copyright &copy;Detectius 2023</p>
