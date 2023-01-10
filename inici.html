@@ -16,14 +16,144 @@
       <nav>
         <ul>
           <li><a href="./inici.html">Inici</a></li>
-          <li><a href="./SobreNosaltres.html">Sobre Nosaltres</a></li>
-          <li><a href="./Detectius.html">Detectius</a></li>
+          <li><a href="#sobreNos">Sobre Nosaltres</a></li>
+          <li><a href="">Detectius</a></li>
           <li><a href="#footer">Contacte</a></li>
           <li><a href="./Formulari.html" target="_blank">Formulari</a></li>
         </ul>
       </nav>
     </header>
+    <section id="sobreNos">
+      <h1>Sobre Nosaltres</h1>
+      <p>
+        Som una empresa de detectius privats amb seu a la ciutat de Barcelona.
+        La nostra empresa s'especialitza en recerques privades que ajuden els
+        nostres clients a obtenir respostes a preguntes importants. El nostre
+        equip de detectius experimentats i professionals s'especialitza en una
+        varietat de serveis investigatius, des de seguiment, vigilància, així
+        com cerca de persones desaparegudes. Comptem amb una àmplia gamma de
+        tècniques de recerca per a ajudar a trobar la informació que els nostres
+        clients necessiten per a prendre decisions informades. A més d'oferir
+        serveis de recerca, també fem anàlisi d'informació financera,
+        recopilació de dades, vigilància electrònica, entrevistes i molt més.
+        Els nostres detectius són professionals qualificats amb anys
+        d'experiència en el camp de la recerca privada. La nostra empresa es
+        compromet a proporcionar un servei de recerca professional, confidencial
+        i discret. Estem compromesos amb els nostres clients i tractem de
+        proporcionar resultats de recerca professionals i precisos. Contacti'ns
+        avui per poder ajudar-lo amb les seves necessitats de recerca!
+      </p>
+    </section>
 
+    <!-- Container for the image gallery -->
+    <div id="slider">
+      <!-- imatges en gran del slider -->
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="./img/gadget0.webp" style="width: 100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="./img/gadget1.webp" style="width: 100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="./img/gadget2.webp" style="width: 100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="./img/gadget3.webp" style="width: 100%" />
+      </div>
+
+      <!-- Botons de seguent i anterior -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- El peu del text de les imatges del slider -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- imatges que surten en petit abaix del slider -->
+      <div class="row">
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/gadget0.webp"
+            style="width: 100%"
+            onclick="currentSlide(1)"
+            alt="Inspector Gadget"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/gadget1.webp"
+            style="width: 100%"
+            onclick="currentSlide(2)"
+            alt="Inspector Gadget"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/gadget2.webp"
+            style="width: 100%"
+            onclick="currentSlide(3)"
+            alt="Inspector Gadget"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img/gadget3.webp"
+            style="width: 100%"
+            onclick="currentSlide(4)"
+            alt="Inspector Gadget"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Aquest script de js serveix per controlar els botons que hi han abaix a l'esquerra del slider i aixi passi a la seguent imatge i a la anterior -->
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    </script>
     <!-- Codi del inici -->
 
     <footer id="footer">

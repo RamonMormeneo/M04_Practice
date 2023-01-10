@@ -48,9 +48,9 @@ header h1 {
 }
 
 nav {
-  margin-left: 400px;
+  margin-left: 550px;
   width: 600px;
-  margin-top: 19px;
+  margin-top: 5px;
 }
 
 ul {
@@ -60,7 +60,7 @@ ul {
 
 li {
   background-color: rgb(68, 63, 63);
-  width: 110px;
+  width: 107px;
   height: 40px;
   text-align: center;
   display: flex;
