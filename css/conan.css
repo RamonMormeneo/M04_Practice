@@ -36,7 +36,7 @@ header h1 {
   color: azure;
   display: flex;
   align-items: center;
-  margin-left: 220px;
+  margin-left: 20vh;
 }
 
 @font-face {
@@ -45,7 +45,7 @@ header h1 {
 }
 
 nav {
-  margin-left: 55vh;
+  margin-left: 65vh;
   width: 40%;
   margin-top: 2.8vh;
 }
