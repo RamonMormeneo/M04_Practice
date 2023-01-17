@@ -1,0 +1,123 @@
+<section id="quisom" class="boxes">
+      <h2 id="som" form="t-somo">QUIEN SOMOS</h2>
+      <div id="wrapper">
+        <div class="card">
+          <img src="img/fumeta.jpg" alt="Avatar" />
+          <div class="cont">
+            <p id="hannibal" form="t-hannibal">
+              <b>Coronel John "Hannibal" Smith</b> Es el jefe y cerebro del
+              equipo. Este veterano de la guerra de Vietnam recibe su apodo en
+              honor del famoso general cartaginés. Además, Smith es un destacado
+              estudioso de la guerra, especialista en estrategia y siempre está
+              listo para actuar.Acostumbra a usar guantes negros y es muy
+              aficionado a fumar puros, que según él lo ayudan a concentrarse.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/loco.jpg" alt="Avatar" />
+          <div class="cont">
+            <p id="murdock" form="t-murdock">
+              <b>Capitán H. M. "Howling Mad" Murdock</b><br />Es un increible
+              piloto de aviones de guerra y helicópteros, que realizó misiones
+              en Vietnam. Normalmente es el que rescata al equipo cuando cae en
+              alguna emboscada y en varias ocasiones demuestra incluso ser el
+              más cuerdo de la unidad y contar con la mayor capacidad de
+              sacrificio en situaciones extremas.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/negro.jpg" alt="Avatar" />
+          <div class="cont">
+            <p id="baracus" form="t-baracus">
+              <b>Sargento Bosco Albert "B. A." Baracus "Mr.T" </b> <br />
+              Es un experto mecánico y conductor. A pesar de su enorme fuerza y
+              mal carácter tiene miedo a volar, lo que ocasiona problemas al
+              resto del equipo que tiene que dejarlo inconsciente mediante
+              golpes para viajar.Suele conducir su furgoneta GMC.LLeva una gran
+              cantidad de colgantes de oro, pendientes y anillos, así como una
+              característica cresta.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/uno.jpg" alt="Avatar" />
+          <div class="cont">
+            <p id="peck" form="t-peck">
+              <b>Teniente Templeton Peck</b><br />Es un sofisticado sex symbol,
+              ligón empedernido, amante de la buena vida y costumbres refinadas,
+              siendo el más reacio a meterse en peleas. Se encarga de proveer al
+              equipo de material difícil de conseguir mediante el uso del timo,
+              es especialista en asumir identidades falsas. De carácter bastante
+              independiente. Además disponede su propio Chevrolet Corvette C4.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    
+/* Cards */
+
+#wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 25%;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.card img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cont {
+  padding: 2px 16px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+.grid-item,
+.grid-item2,
+.grid-item3 {
+  padding: 20px;
+  font-size: 30px;
+  text-align: left;
+  font-family: equipo;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Lato;
+}
+.slider {
+  width: 60vw;
+  height: 33vw;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  line-height: 240px;
+  margin: auto;
+}
+.slider > .radio {
+  display: none;
+}
