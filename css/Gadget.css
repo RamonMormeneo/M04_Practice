@@ -90,6 +90,17 @@ a {
   font-size: 18px;
 }
 
+#idiomas {
+  position: absolute;
+  top: 2vh;
+  left: 70vh;
+}
+#idiomas img {
+  width: 30px;
+  cursor: pointer;
+  height: 20px;
+}
+
 footer {
   background-color: rgba(100, 100, 107, 0.866);
   position: relative;

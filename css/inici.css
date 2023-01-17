@@ -59,6 +59,17 @@ p {
   font-size: 18px;
 }
 
+#idiomas {
+  position: absolute;
+  top: 2vh;
+  left: 70vh;
+}
+#idiomas img {
+  width: 30px;
+  cursor: pointer;
+  height: 20px;
+}
+
 @font-face {
   font-family: GaramondRegular;
   src: url(../Fonts/GaramondRegular.ttf);

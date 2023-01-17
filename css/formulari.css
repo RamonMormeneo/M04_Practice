@@ -88,6 +88,17 @@ footer {
   align-items: center;
 }
 
+#idiomas {
+  position: absolute;
+  top: 2vh;
+  left: 70vh;
+}
+#idiomas img {
+  width: 30px;
+  cursor: pointer;
+  height: 20px;
+}
+
 /* Codi Formulari */
 
 .signupFrm {
