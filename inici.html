@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Inici</title>
 
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/inici.css" />
@@ -18,20 +18,44 @@
         <ul>
           <li><a href="./inici.html" id="inici">Inici</a></li>
           <li><a href="#sobreNos">Sobre Nosaltres</a></li>
-          <li><a href="">Detectius</a></li>
+          <li>
+            <details>
+              <summary>Detectius</summary>
+              <ul class="desplegable">
+                <li>
+                  <a href="./Gadget.html" class="contingutDesplegable"
+                    >Inspector Gadget</a
+                  >
+                </li>
+                <li>
+                  <a href="./Conan.html" id="conan">Detectiu Conan</a>
+                </li>
+                <li>
+                  <a href="./Rorschach.html" class="contingutDesplegable"
+                    >Inspector Rorschach</a
+                  >
+                </li>
+                <li>
+                  <a href="./Sherlock.html" class="contingutDesplegable"
+                    >Sherlock Holmes</a
+                  >
+                </li>
+              </ul>
+            </details>
+          </li>
           <li><a href="#footer">Contacte</a></li>
           <li><a href="./Formulari.html" target="_blank">Formulari</a></li>
         </ul>
       </nav>
       <div id="idiomas">
         <a onclick="changeLanguage('cast')">
-          <img src="img/espanol.jpg" alt="espanol" id="castella" />
+          <img src="./img/espanol.jpg" alt="espanol" id="castella" />
         </a>
         <a onclick="changeLanguage('ca')">
-          <img src="img/catala.jpg" alt="catala" id="catala" />
+          <img src="./img/catala.jpg" alt="catala" id="catala" />
         </a>
         <a onclick="changeLanguage('en')">
-          <img src="img/english.jpg" alt="angles" id="angles" />
+          <img src="./img/english.jpg" alt="angles" id="angles" />
         </a>
       </div>
     </header>
@@ -64,27 +88,27 @@
       <!-- imatges en gran del slider -->
 
       <div class="mySlides">
-        <img src="/img/conaninici.jpg" style="width: 100%" />
+        <img src="./img/conaninici.jpg" style="width: 100%" />
       </div>
 
       <div class="mySlides">
-        <img src="/img/rorschach-portada.jpg" style="width: 100%" />
+        <img src="./img/rorschach-portada.jpg" style="width: 100%" />
       </div>
 
       <div class="mySlides">
-        <img src="/img/gadget.jpg" style="width: 100%" />
+        <img src="./img/gadget.jpg" style="width: 100%" />
       </div>
 
       <div class="mySlides">
-        <img src="/img/holmesinici.jpg" style="width: 100%" />
+        <img src="./img/holmesinici.jpg" style="width: 100%" />
       </div>
 
       <div class="mySlides">
-        <img src="img/colage1.png" style="width: 100%" />
+        <img src="./img/colage1.png" style="width: 100%" />
       </div>
 
       <div class="mySlides">
-        <img src="img/colage2.png" style="width: 100%" />
+        <img src="./img/colage2.png" style="width: 100%" />
       </div>
       <!-- Botons de seguent i anterior -->
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -100,7 +124,7 @@
         <div class="column">
           <img
             class="demo cursor"
-            src="/img/conaninici.jpg"
+            src="./img/conaninici.jpg"
             style="width: 100%"
             onclick="currentSlide(1)"
             alt="Detectiu Conan"
@@ -109,7 +133,7 @@
         <div class="column">
           <img
             class="demo cursor"
-            src="img/rorschach-portada.jpg"
+            src="./img/rorschach-portada.jpg"
             style="width: 100%"
             onclick="currentSlide(2)"
             alt="Detectiu Rorschach"
@@ -118,7 +142,7 @@
         <div class="column">
           <img
             class="demo cursor"
-            src="img/gadget.jpg"
+            src="./img/gadget.jpg"
             style="width: 100%"
             onclick="currentSlide(3)"
             alt="Inspector Gadget"
@@ -127,7 +151,7 @@
         <div class="column">
           <img
             class="demo cursor"
-            src="img/holmesinici.jpg"
+            src="./img/holmesinici.jpg"
             style="width: 100%"
             onclick="currentSlide(4)"
             alt="Sherlock Holmes"
@@ -136,7 +160,7 @@
         <div class="column">
           <img
             class="demo cursor"
-            src="img/colage1.png"
+            src="./img/colage1.png"
             style="width: 100%"
             onclick="currentSlide(5)"
             alt="Equip de Detectius"
@@ -145,7 +169,7 @@
         <div class="column">
           <img
             class="demo cursor"
-            src="img/colage2.png"
+            src="./img/colage2.png"
             style="width: 100%"
             onclick="currentSlide(6)"
             alt="Equip de Detectius"
