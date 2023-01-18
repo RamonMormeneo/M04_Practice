@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  background-color: #dadce0;
 }
 
 * {
@@ -7,7 +8,9 @@ html {
 }
 
 body {
-  height: 2000px;
+  height: auto;
+  width: 100%;
+  font-family: GaramondRegular;
 }
 
 header {
@@ -16,44 +19,138 @@ header {
   background-color: rgba(100, 100, 107, 0.866);
   height: 80px;
   display: flex;
+  justify-content: flex-start;
 }
 
 header img {
   height: 60px;
   width: 60px;
   border-radius: 100%;
-  position: relative;
-  top: 12%;
-  left: 5%;
+  margin-top: 10px;
+  margin-left: 50px;
 }
 
 header h1 {
   font-weight: bold;
   font-size: xx-large;
-  position: relative;
-  top: 35%;
-  left: 20%;
   color: azure;
-  font-family: IndieFlower;
+  display: flex;
+  align-items: center;
+  margin-left: 220px;
 }
 
 @font-face {
-  font-family: IndieFlower;
-  src: url(../Fonts/IndieFlower.ttf);
+  font-family: GaramondRegular;
+  src: url(../Fonts/GaramondRegular.ttf);
 }
 
 nav {
-  position: relative;
-  top: 25%;
-  left: 55%;
+  margin-left: 55vh;
   width: 40%;
+  margin-top: 2.8vh;
+}
+
+details {
+  position: absolute;
+  cursor: pointer;
+}
+summary {
+  color: white;
+}
+
+.desplegable {
+  display: block;
+  position: absolute;
+  top: 3vh;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
 }
 
 li {
-  display: inline;
+  background-color: rgb(68, 63, 63);
+  width: 110px;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 a {
   display: inline-block;
-  padding: 2%;
-  background-color: brown;
+  text-align: center;
+  color: azure;
+  text-decoration: none;
+  width: 100px;
+}
+
+#sobreNos h1 {
+  font-weight: bold;
+  font-size: 30px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#sobreNos p {
+  text-align: justify;
+  margin-left: 150px;
+  margin-right: 150px;
+  font-size: 18px;
+}
+
+#idiomas {
+  position: absolute;
+  top: 2vh;
+  left: 70vh;
+}
+#idiomas img {
+  width: 30px;
+  cursor: pointer;
+  height: 20px;
+}
+
+footer {
+  background-color: rgba(100, 100, 107, 0.866);
+  position: relative;
+  margin-top: 100px;
+  display: flex;
+  height: 100px;
+  justify-content: space-around;
+  color: white;
+  font-size: larger;
+  align-items: center;
+}
+
+.perfil {
+  height: 200px;
+  width: 200px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.subtitol {
+  font-weight: bold;
+  font-size: 50px;
+  color: black;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.descripcio {
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
+  font-size: larger;
 }

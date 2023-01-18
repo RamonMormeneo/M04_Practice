@@ -18,7 +18,7 @@ async function changeLanguage(lang) {
   const response = await fetch(`./i18n/${lang}.json`);
   const data = await response.json();
   /*codi nostre*/
-  document.getElementById("").innerHTML = data.form.first_name;
+  document.getElementById("").innerHTML = data.first_name;
 }
 
 changeLanguage("cast");

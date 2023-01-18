@@ -61,27 +61,21 @@ p {
 }
 
 details {
-  position: relative;
+  position: absolute;
+  cursor: pointer;
 }
 summary {
   color: white;
 }
 
 .desplegable {
+  display: block;
   position: absolute;
   top: 3vh;
 }
 
 #conan {
   margin-top: 1vh;
-}
-
-.contingutDesplegable {
-  margin-top: 0.5vh;
-}
-
-.desplegable li {
-  display: block;
 }
 
 #idiomas {

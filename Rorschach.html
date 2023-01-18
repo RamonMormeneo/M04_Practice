@@ -7,7 +7,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/Ramon.css" />
+    <link rel="stylesheet" href="./css/Rorschach.css" />
   </head>
   <body>
     <header>
@@ -15,13 +15,50 @@
       <h1>DETECTIUS</h1>
       <nav>
         <ul>
-          <li><a href="#">Inici</a></li>
-          <li><a href="#">Sobre Nosaltres</a></li>
-          <li><a href="#">Detectius</a></li>
-          <li><a href="#">Contacte</a></li>
-          <li><a href="#">Formulari</a></li>
+          <li>
+            <a href="./inici.html">Inici</a>
+          </li>
+          <li><a href="#sobreNos">Sobre Nosaltres</a></li>
+          <li>
+            <details>
+              <summary>Detectius</summary>
+              <ul class="desplegable">
+                <li>
+                  <a href="./Gadget.html" class="contingutDesplegable"
+                    >Inspector Gadget</a
+                  >
+                </li>
+                <li>
+                  <a href="./Conan.html" id="conan">Detectiu Conan</a>
+                </li>
+                <li>
+                  <a href="./Rorschach.html" class="contingutDesplegable"
+                    >Inspector Rorschach</a
+                  >
+                </li>
+                <li>
+                  <a href="./Sherlock.html" class="contingutDesplegable"
+                    >Sherlock Holmes</a
+                  >
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="#footer">Contacte</a></li>
+          <li><a href="./Formulari.html" target="_blank">Formulari</a></li>
         </ul>
       </nav>
+      <div id="idiomas">
+        <a onclick="changeLanguage('cast')">
+          <img src="img/espanol.jpg" alt="espanol" id="castella" />
+        </a>
+        <a onclick="changeLanguage('ca')">
+          <img src="img/catala.jpg" alt="catala" id="catala" />
+        </a>
+        <a onclick="changeLanguage('en')">
+          <img src="img/english.jpg" alt="angles" id="angles" />
+        </a>
+      </div>
     </header>
   </body>
 </html>
