@@ -136,6 +136,15 @@ footer {
   align-items: center;
 }
 
+.conjunt {
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+.imatgeinici {
+  width: 100%;
+}
+
 /* SLIDER*/
 
 /* Position the image container (needed to position the left and right arrows) */
@@ -151,7 +160,7 @@ footer {
   display: none;
 }
 
-/* Add a pointer when hovering over the thumbnail images */
+/* Add a pointer when hovering over the images */
 .cursor {
   cursor: pointer;
 }
