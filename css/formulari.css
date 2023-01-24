@@ -144,8 +144,6 @@ footer {
 
 .input {
   position: absolute;
-  top: 0px;
-  left: 0px;
   height: 100%;
   width: 100%;
   border: 1px solid #dadce0;
@@ -170,7 +168,6 @@ footer {
   color: #dadce0;
   font-size: 16px;
   transition: 0.5s;
-  z-index: 0;
 }
 
 .submitBtn {
@@ -191,6 +188,7 @@ footer {
   transform: translateY(-2px);
 }
 
+/* transico del que hi ha al placeholder */
 .input:focus + .label {
   top: -7px;
   left: 3px;
@@ -204,6 +202,7 @@ footer {
   border: 2px solid grey;
 }
 
+/* Serveix per quan hi escrius i el placeholder es mou cap amunt, no torni a anar cap abaix i es quedi adalt  */
 .input:not(:placeholder-shown) + .label {
   top: -7px;
   left: 3px;
