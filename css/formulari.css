@@ -210,3 +210,10 @@ footer {
   font-size: 14px;
   font-weight: 600;
 }
+
+@media only screen and (max-width: 375px) {
+  .signupFrm,
+  .inputContainer {
+    width: 100%;
+  }
+}
