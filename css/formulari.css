@@ -16,204 +16,432 @@ body {
   font-family: GaramondRegular;
 }
 
-header {
-  position: sticky;
-  top: 0px;
-  background-color: rgba(100, 100, 107, 0.866);
-  height: 80px;
-  display: flex;
-  justify-content: flex-start;
+/* phone */
+/*iphone 12pro*/
+
+@media (max-width: 480px) {
+  header {
+    top: 0px;
+    background-color: rgba(100, 100, 107, 0.866);
+    height: 43vh;
+    display: flex;
+    justify-content: flex-start;
+    width: auto;
+  }
+
+  header img {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    margin-top: 2vh;
+    margin-left: 3vh;
+  }
+
+  header h1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: azure;
+    margin-top: 4vh;
+    margin-left: 5vh;
+  }
+
+  @font-face {
+    font-family: GaramondRegular;
+    src: url(../Fonts/GaramondRegular.ttf);
+  }
+
+  nav {
+    margin-top: 10vh;
+    margin-left: -31vh;
+  }
+
+  details {
+    position: absolute;
+    cursor: pointer;
+  }
+  summary {
+    color: white;
+  }
+
+  .desplegable {
+    display: block;
+    position: absolute;
+    top: 3vh;
+  }
+
+  li {
+    background-color: rgb(68, 63, 63);
+    width: 10vh;
+    height: 40px;
+    margin-right: 1vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1vh;
+  }
+
+  a {
+    display: inline-block;
+    text-align: center;
+    color: azure;
+    text-decoration: none;
+    width: 100px;
+  }
+
+  #sobreNos h1 {
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  #sobreNos p {
+    text-align: justify;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 18px;
+  }
+
+
+  #idiomas img {
+    width: 50px;
+    cursor: pointer;
+    height: 30px;
+  }
+
+  #idiomas a {
+    display: flex;
+    margin-top: 7.5vh;
+    margin-left: 7vh;
+  }
+
+  footer {
+    background-color: rgba(100, 100, 107, 0.866);
+    position: relative;
+    height: auto;
+    color: white;
+    font-size: larger;
+    text-align: center;
+  }
+
+  footer p{
+    padding-top: 3.3vh;
+  }
+
+    /* Codi Formulari */
+
+    .signupFrm {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      margin-top: 6vh;
+    }
+  
+    .form {
+      background-color: white;
+      width: 400px;
+      border-radius: 8px;
+      padding: 20px 40px;
+      box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
+    }
+  
+    .title {
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+    }
+  
+    .inputContainer {
+      position: relative;
+      height: 45px;
+      width: 90%;
+      margin-bottom: 17px;
+    }
+  
+    .input {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      border: 1px solid #dadce0;
+      border-radius: 7px;
+      font-size: 16px;
+      padding: 0 20px;
+      outline: none;
+      background: none;
+      z-index: 1;
+    }
+  
+    ::placeholder {
+      color: transparent;
+    }
+  
+    .label {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      padding: 0 4px;
+      background-color: white;
+      color: #dadce0;
+      font-size: 16px;
+      transition: 0.5s;
+    }
+  
+    .submitBtn {
+      display: block;
+      margin-left: auto;
+      padding: 15px 30px;
+      border: none;
+      background-color: grey;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 30px;
+    }
+  
+    .submitBtn:hover {
+      background-color: gray;
+      transform: translateY(-2px);
+    }
+  
+    /* transico del que hi ha al placeholder */
+    .input:focus + .label {
+      top: -7px;
+      left: 3px;
+      z-index: 10;
+      font-size: 14px;
+      font-weight: 600;
+      color: grey;
+    }
+  
+    .input:focus {
+      border: 2px solid grey;
+    }
+  
+    /* Serveix per quan hi escrius i el placeholder es mou cap amunt, no torni a anar cap abaix i es quedi adalt  */
+    .input:not(:placeholder-shown) + .label {
+      top: -7px;
+      left: 3px;
+      z-index: 10;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  
+    @media only screen and (max-width: 375px) {
+      .signupFrm,
+      .inputContainer {
+        width: 100%;
+      }
+    }
+    
 }
 
-header img {
-  height: 60px;
-  width: 60px;
-  border-radius: 100%;
-  margin-top: 10px;
-  margin-left: 50px;
-}
+/* desktop */
 
-header h1 {
-  font-weight: bold;
-  font-size: xx-large;
-  color: azure;
-  display: flex;
-  align-items: center;
-  margin-left: 220px;
-}
+@media (min-width: 1081px) {
+  header {
+    position: sticky;
+    top: 0px;
+    background-color: rgba(100, 100, 107, 0.866);
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+  }
 
-@font-face {
-  font-family: GaramondRegular;
-  src: url(../Fonts/GaramondRegular.ttf);
-}
+  header img {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    margin-top: 10px;
+    margin-left: 50px;
+  }
 
-nav {
-  margin-left: 55vh;
-  width: 40%;
-  margin-top: 0.5vh;
-}
+  header h1 {
+    font-weight: bold;
+    font-size: xx-large;
+    color: azure;
+    display: flex;
+    align-items: center;
+    margin-left: 220px;
+  }
 
-details {
-  position: absolute;
-  cursor: pointer;
-}
-summary {
-  color: white;
-}
+  @font-face {
+    font-family: GaramondRegular;
+    src: url(../Fonts/GaramondRegular.ttf);
+  }
 
-.desplegable {
-  display: block;
-  position: absolute;
-  top: 3vh;
-}
+  nav {
+    margin-left: 55vh;
+    width: 40%;
+    margin-top: 0.5vh;
+  }
 
-ul {
-  display: flex;
-  justify-content: space-around;
-}
+  details {
+    position: absolute;
+    cursor: pointer;
+  }
+  summary {
+    color: white;
+  }
 
-li {
-  background-color: rgb(68, 63, 63);
-  width: 107px;
-  height: 40px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .desplegable {
+    display: block;
+    position: absolute;
+    top: 3vh;
+  }
 
-a {
-  display: inline-block;
-  text-align: center;
-  color: azure;
-  text-decoration: none;
-  width: 100px;
-}
+  ul {
+    display: flex;
+    justify-content: space-around;
+  }
 
-footer {
-  background-color: rgba(100, 100, 107, 0.866);
-  position: relative;
-  top: auto;
-  display: flex;
-  height: 100px;
-  justify-content: space-around;
-  color: white;
-  font-size: larger;
-  align-items: center;
-}
+  li {
+    background-color: rgb(68, 63, 63);
+    width: 107px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-#idiomas {
-  position: absolute;
-  top: 2vh;
-  left: 70vh;
-}
-#idiomas img {
-  width: 30px;
-  cursor: pointer;
-  height: 20px;
-}
+  a {
+    display: inline-block;
+    text-align: center;
+    color: azure;
+    text-decoration: none;
+    width: 100px;
+  }
 
-/* Codi Formulari */
+  footer {
+    background-color: rgba(100, 100, 107, 0.866);
+    position: relative;
+    top: auto;
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    color: white;
+    font-size: larger;
+    align-items: center;
+  }
 
-.signupFrm {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
+  #idiomas {
+    position: absolute;
+    top: 2vh;
+    left: 70vh;
+  }
+  #idiomas img {
+    width: 30px;
+    cursor: pointer;
+    height: 20px;
+  }
 
-.form {
-  background-color: white;
-  width: 400px;
-  border-radius: 8px;
-  padding: 20px 40px;
-  box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
-}
+  /* Codi Formulari */
 
-.title {
-  font-size: 50px;
-  margin-bottom: 50px;
-}
+  .signupFrm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
 
-.inputContainer {
-  position: relative;
-  height: 45px;
-  width: 90%;
-  margin-bottom: 17px;
-}
+  .form {
+    background-color: white;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
+  }
 
-.input {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border: 1px solid #dadce0;
-  border-radius: 7px;
-  font-size: 16px;
-  padding: 0 20px;
-  outline: none;
-  background: none;
-  z-index: 1;
-}
+  .title {
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
 
-::placeholder {
-  color: transparent;
-}
-
-.label {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  padding: 0 4px;
-  background-color: white;
-  color: #dadce0;
-  font-size: 16px;
-  transition: 0.5s;
-}
-
-.submitBtn {
-  display: block;
-  margin-left: auto;
-  padding: 15px 30px;
-  border: none;
-  background-color: grey;
-  color: white;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 30px;
-}
-
-.submitBtn:hover {
-  background-color: gray;
-  transform: translateY(-2px);
-}
-
-/* transico del que hi ha al placeholder */
-.input:focus + .label {
-  top: -7px;
-  left: 3px;
-  z-index: 10;
-  font-size: 14px;
-  font-weight: 600;
-  color: grey;
-}
-
-.input:focus {
-  border: 2px solid grey;
-}
-
-/* Serveix per quan hi escrius i el placeholder es mou cap amunt, no torni a anar cap abaix i es quedi adalt  */
-.input:not(:placeholder-shown) + .label {
-  top: -7px;
-  left: 3px;
-  z-index: 10;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-@media only screen and (max-width: 375px) {
-  .signupFrm,
   .inputContainer {
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+  }
+
+  .input {
+    position: absolute;
+    height: 100%;
     width: 100%;
+    border: 1px solid #dadce0;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+  }
+
+  ::placeholder {
+    color: transparent;
+  }
+
+  .label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: #dadce0;
+    font-size: 16px;
+    transition: 0.5s;
+  }
+
+  .submitBtn {
+    display: block;
+    margin-left: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: grey;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  .submitBtn:hover {
+    background-color: gray;
+    transform: translateY(-2px);
+  }
+
+  /* transico del que hi ha al placeholder */
+  .input:focus + .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: grey;
+  }
+
+  .input:focus {
+    border: 2px solid grey;
+  }
+
+  /* Serveix per quan hi escrius i el placeholder es mou cap amunt, no torni a anar cap abaix i es quedi adalt  */
+  .input:not(:placeholder-shown) + .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  @media only screen and (max-width: 375px) {
+    .signupFrm,
+    .inputContainer {
+      width: 100%;
+    }
   }
 }
