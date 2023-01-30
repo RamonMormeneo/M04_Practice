@@ -1,4 +1,5 @@
-html {
+
+/* html {
   scroll-behavior: smooth;
   background-color: #dadce0;
 }
@@ -154,9 +155,9 @@ footer {
   margin-left: 150px;
   margin-right: 150px;
   font-size: larger;
-}
+} */
 
-.titols h1 {
+/* .titols h1 {
   font-weight: bold;
   font-size: 4rem;
   display: flex;
@@ -173,6 +174,8 @@ footer {
 
 .izquiera{
   width: 50%;
+
+  height: 70%;
   display: flex;
   flex-direction: column;
   
@@ -237,4 +240,536 @@ button{
 }
 .imgButton{
   width:50%; height: 101%;
+} */
+
+
+@media (max-width:391px) {
+  html {
+    scroll-behavior: smooth;
+    background-color: #dadce0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: auto;
+    width: 100%;
+    font-family: GaramondRegular;
+  }
+  
+  header {
+    position: sticky;
+    top: 0px;
+    background-color: rgba(100, 100, 107, 0.866);
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 9;
+    display: none;
+  }
+  
+  header img {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    margin-top: 10px;
+    margin-left: 50px;
+    display: none;
+  }
+  
+  header h1 {
+    font-weight: bold;
+    font-size: xx-large;
+    color: azure;
+    display: flex;
+    align-items: center;
+    margin-left: 220px;
+    display: none;
+  }
+  
+  @font-face {
+    font-family: GaramondRegular;
+    src: url(../Fonts/GaramondRegular.ttf);
+  }
+  
+  nav {
+    margin-left: 55vh;
+    width: 40%;
+    margin-top: 2.8vh;
+    display: none;
+  }
+  
+  details {
+    position: absolute;
+    cursor: pointer;
+    display: none;
+  }
+  summary {
+    color: white;
+    display: none;
+  }
+  
+  .desplegable {
+    display: block;
+    position: absolute;
+    top: 3vh;
+    display: none;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: space-around;
+    display: none;
+  }
+  
+  li {
+    background-color: rgb(68, 63, 63);
+    width: 110px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  
+  a {
+    display: inline-block;
+    text-align: center;
+    color: azure;
+    text-decoration: none;
+    width: 100px;
+  }
+  
+  #sobreNos h1 {
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: none;
+  }
+  
+  #sobreNos p {
+    text-align: justify;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 18px;
+    display: none;
+  }
+  
+  #idiomas {
+    position: absolute;
+    top: 2vh;
+    left: 70vh;
+    display: none;
+  }
+  #idiomas img {
+    width: 30px;
+    cursor: pointer;
+    height: 20px;
+    display: none;
+  }
+  
+  footer {
+    background-color: rgba(100, 100, 107, 0.866);
+    position: relative;
+    margin-top: 2vh;
+    display: flex;
+  
+    justify-content: space-around;
+    color: white;
+    font-size: larger;
+    align-items: center;
+    
+  }
+  
+  .perfil {
+    height: 200px;
+    width: 200px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    display: none;
+  }
+  
+  .subtitol {
+    font-weight: bold;
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    margin-top: 70px;
+    display: none;
+  }
+  
+  .descripcio {
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: larger;
+    display: none;
+  }
+  /*  */
+  header {
+    position: sticky;
+    top: 0px;
+    background-color: rgba(100, 100, 107, 0.866);
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 9;
+  }
+  .titols h1 {
+    font-weight: bold;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    
+  }
+  
+  .fondo{
+    
+    margin-top: 5%;
+    
+  }
+  
+  .izquiera{
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    
+    
+  }
+  
+  .derecha{
+    position: relative;
+    text-align: center;
+    color: black;
+    height: 30rem;
+  }
+  
+  .derecha img{
+    opacity: 0.3;
+    z-index: 0;
+    width: 100%;
+    height: 30rem;
+    
+    
+  }
+  
+  
+  .Text{
+    position:absolute;
+    
+    
+    
+    margin-left: 3vw;
+    margin-right: 3vw;
+    
+   
+  }
+  
+  #Text1{
+    bottom: 1%;
+    top:5%;
+    font-size: large;
+  }
+  #Text2{
+    display: none;
+    font-size: medium;
+    bottom: 1%;
+    top:5%
+  }
+  
+  #Text3{
+    bottom: 50vh;
+    bottom: 1%;
+    top:5%
+  }
+  
+  #Text4{
+    display: none;
+    bottom: 1%;
+    top:5%
+  }
+  
+  button{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    height: 20vh;
+    width: 25%;
+    color: white;
+    background-color: black;
+  
+  }
+  
+  .textButton{
+    
+    position: absolute; 
+    font-size:medium;
+    font-style: italic;
+    text-align: center;
+    top: 36%;
+  }
+  .imgButton{
+    width:100%; height: 101%;
+    
+  }
+}
+
+@media (min-width:391px)
+{
+  html {
+    scroll-behavior: smooth;
+    background-color: #dadce0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: auto;
+    width: 100%;
+    font-family: GaramondRegular;
+  }
+  
+  header {
+    position: sticky;
+    top: 0px;
+    background-color: rgba(100, 100, 107, 0.866);
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 9;
+  }
+  
+  header img {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    margin-top: 10px;
+    margin-left: 50px;
+  }
+  
+  header h1 {
+    font-weight: bold;
+    font-size: xx-large;
+    color: azure;
+    display: flex;
+    align-items: center;
+    margin-left: 220px;
+  }
+  
+  @font-face {
+    font-family: GaramondRegular;
+    src: url(../Fonts/GaramondRegular.ttf);
+  }
+  
+  nav {
+    margin-left: 55vh;
+    width: 40%;
+    margin-top: 2.8vh;
+  }
+  
+  details {
+    position: absolute;
+    cursor: pointer;
+  }
+  summary {
+    color: white;
+  }
+  
+  .desplegable {
+    display: block;
+    position: absolute;
+    top: 3vh;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  li {
+    background-color: rgb(68, 63, 63);
+    width: 110px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  a {
+    display: inline-block;
+    text-align: center;
+    color: azure;
+    text-decoration: none;
+    width: 100px;
+  }
+  
+  #sobreNos h1 {
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  #sobreNos p {
+    text-align: justify;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 18px;
+  }
+  
+  #idiomas {
+    position: absolute;
+    top: 2vh;
+    left: 70vh;
+  }
+  #idiomas img {
+    width: 30px;
+    cursor: pointer;
+    height: 20px;
+  }
+  
+  footer {
+    background-color: rgba(100, 100, 107, 0.866);
+    position: relative;
+    margin-top: 100px;
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    color: white;
+    font-size: larger;
+    align-items: center;
+  }
+  
+  .perfil {
+    height: 200px;
+    width: 200px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+  
+  .subtitol {
+    font-weight: bold;
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    margin-top: 70px;
+  }
+  
+  .descripcio {
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: larger;
+  }
+  .titols h1 {
+    font-weight: bold;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+  
+  .fondo{
+    display: flex;
+    margin-top: 5%;
+  
+  }
+  
+  .izquiera{
+    width: 50%;
+  
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .derecha{
+    width: 50%;
+    position: relative;
+    text-align: center;
+    color: black;
+  }
+  
+  .derecha img{
+    opacity: 0.3;
+    z-index: 0;
+  }
+  
+  
+  .Text{
+    position:absolute;
+    
+    font-size: x-large;
+    
+    margin-left: 3vw;
+    margin-right: 3vw;
+  
+  }
+  
+  #Text1{
+    bottom: 63vh;
+  }
+  #Text2{
+    display: none;
+    bottom: 50vh;
+  }
+  
+  #Text3{
+    bottom: 50vh;
+    display: none;
+  }
+  
+  #Text4{
+    display: none;
+    bottom: 55vh;
+  }
+  
+  button{
+    display: flex;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    height: 41vh;
+    color: white;
+    background-color: black;
+  }
+  
+  .textButton{
+    width:50%; 
+    position: relative; 
+    top: 45%; 
+    font-size: xx-large;
+    font-style: italic;
+  }
+  .imgButton{
+    width:50%; height: 101%;
+  }
 }
