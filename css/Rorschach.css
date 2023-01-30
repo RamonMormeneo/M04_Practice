@@ -241,6 +241,8 @@ button{
 .imgButton{
   width:50%; height: 101%;
 } */
+
+
 @media (max-width:391px) {
   html {
     scroll-behavior: smooth;
@@ -376,14 +378,14 @@ button{
   footer {
     background-color: rgba(100, 100, 107, 0.866);
     position: relative;
-    margin-top: 100px;
+    margin-top: 2vh;
     display: flex;
-    height: 100px;
+  
     justify-content: space-around;
     color: white;
     font-size: larger;
     align-items: center;
-    display: none;
+    
   }
   
   .perfil {
@@ -432,91 +434,98 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 4rem;
+    margin-top: 1rem;
     
   }
   
   .fondo{
-    display: flex;
+    
     margin-top: 5%;
-    display: none;
+    
   }
   
   .izquiera{
-    width: 50%;
-  
-    height: 70%;
+    height: 20%;
     display: flex;
-    flex-direction: column;
-    display: none;
+    justify-content: space-around;
+    
     
   }
   
   .derecha{
-    width: 50%;
     position: relative;
     text-align: center;
     color: black;
-    display: none;
+    height: 30rem;
   }
   
   .derecha img{
     opacity: 0.3;
     z-index: 0;
-    display: none;
+    width: 100%;
+    height: 30rem;
+    
+    
   }
   
   
   .Text{
     position:absolute;
     
-    font-size: x-large;
+    
     
     margin-left: 3vw;
     margin-right: 3vw;
-    display: none;
+    
+   
   }
   
   #Text1{
-    bottom: 63vh;
-    display: none;
+    bottom: 1%;
+    top:5%;
+    font-size: large;
   }
   #Text2{
     display: none;
-    bottom: 50vh;
+    font-size: medium;
+    bottom: 1%;
+    top:5%
   }
   
   #Text3{
     bottom: 50vh;
-    display: none;
+    bottom: 1%;
+    top:5%
   }
   
   #Text4{
     display: none;
-    bottom: 55vh;
+    bottom: 1%;
+    top:5%
   }
   
   button{
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
     flex-shrink: 0;
-    height: 41vh;
+    height: 20vh;
+    width: 25%;
     color: white;
     background-color: black;
-    display: none;
+  
   }
   
   .textButton{
-    width:50%; 
-    position: relative; 
-    top: 45%; 
-    font-size: xx-large;
+    
+    position: absolute; 
+    font-size:medium;
     font-style: italic;
-    display: none;
+    text-align: center;
+    top: 36%;
   }
   .imgButton{
-    width:50%; height: 101%;
-    display: none;
+    width:100%; height: 101%;
+    
   }
 }
 
